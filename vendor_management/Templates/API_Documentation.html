@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation - Vendor Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .api-example {
+            margin-top: 20px;
+        }
+        .api-example img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>API Documentation - Vendor Management System</h1>
+        <p>Below are some guidelines for using the API endpoints:</p>
+        <ul>
+            <li><strong>Vendor Profile Management:</strong> Use the following endpoints to manage vendor profiles:
+                <ul>
+                    <li>POST /api/vendors/</li>
+                    <li>GET /api/vendors/</li>
+                    <li>GET /api/vendors/{vendor_id}/</li>
+                    <li>PUT /api/vendors/{vendor_id}/</li>
+                    <li>DELETE /api/vendors/{vendor_id}/</li>
+                </ul>
+            </li>
+            <li><strong>Purchase Order Tracking:</strong> Use the following endpoints to track purchase orders:
+                <ul>
+                    <li>POST /api/purchase_orders/</li>
+                    <li>GET /api/purchase_orders/</li>
+                    <li>GET /api/purchase_orders/{po_id}/</li>
+                    <li>PUT /api/purchase_orders/{po_id}/</li>
+                    <li>DELETE /api/purchase_orders/{po_id}/</li>
+                </ul>
+            </li>
+            <li><strong>Vendor Performance Evaluation:</strong> Use the following endpoint to retrieve a vendor's performance metrics:
+                <ul>
+                    <li>GET /api/vendors/{vendor_id}/performance/</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="api-example">
+            <h2>Example of Using the API</h2>
+            <p>Below is a screenshot of how you can test the API endpoints using Postman:</p>
+            <img src="path_to_screenshot.png" alt="Postman screenshot">
+        </div>
+    </div>
+</body>
+</html>
