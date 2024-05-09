@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Documentation - Vendor Management System</title>
+    {% load static %}
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,35 +40,47 @@
     <div class="container">
         <h1>API Documentation - Vendor Management System</h1>
         <p>Below are some guidelines for using the API endpoints:</p>
-        <ul>
-            <li><strong>Vendor Profile Management:</strong> Use the following endpoints to manage vendor profiles:
-                <ul>
-                    <li>POST /api/vendors/</li>
-                    <li>GET /api/vendors/</li>
-                    <li>GET /api/vendors/{vendor_id}/</li>
-                    <li>PUT /api/vendors/{vendor_id}/</li>
-                    <li>DELETE /api/vendors/{vendor_id}/</li>
+        <ul style="list-style-type: none; padding-left: 20px;">
+            <li>
+                <strong>Vendor Profile Management:</strong> Use the following endpoints to manage vendor profiles:
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li style="margin-top: 5px;" >* POST /api/vendors/</li>
+                    <li style="margin-top: 5px;" >* GET /api/vendors/</li>
+                    <li style="margin-top: 5px;" >* GET /api/vendors/{vendor_id}/</li>
+                    <li style="margin-top: 5px;" >* PUT /api/vendors/{vendor_id}/</li>
+                    <li style="margin-top: 5px;" >* DELETE /api/vendors/{vendor_id}/</li>
                 </ul>
             </li>
-            <li><strong>Purchase Order Tracking:</strong> Use the following endpoints to track purchase orders:
-                <ul>
-                    <li>POST /api/purchase_orders/</li>
-                    <li>GET /api/purchase_orders/</li>
-                    <li>GET /api/purchase_orders/{po_id}/</li>
-                    <li>PUT /api/purchase_orders/{po_id}/</li>
-                    <li>DELETE /api/purchase_orders/{po_id}/</li>
-                </ul>
+            <li>
+                <br>
+                
+                <li>
+                    <strong>Purchase Order Tracking:</strong> Use the following endpoints to track purchase orders:
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                        <li style="margin-top: 5px;" >* POST /api/purchase_orders/</li>
+                        <li style="margin-top: 5px;" >* GET /api/purchase_orders/</li>
+                        <li style="margin-top: 5px;" >* GET /api/purchase_orders/{po_id}/</li>
+                        <li style="margin-top: 5px;" >* PUT /api/purchase_orders/{po_id}/</li>
+                        <lis style="margin-top: 5px;">* DELETE /api/purchase_orders/{po_id}/</li>
+                    </ul>
+                </li>
             </li>
-            <li><strong>Vendor Performance Evaluation:</strong> Use the following endpoint to retrieve a vendor's performance metrics:
-                <ul>
-                    <li>GET /api/vendors/{vendor_id}/performance/</li>
+            <li>
+                <br>
+                <strong>Vendor Performance Evaluation:</strong> Use the following endpoint to retrieve a vendor's performance metrics:
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li style="margin-top: 5px;" >* GET /api/vendors/{vendor_id}/performance/</li>
                 </ul>
             </li>
         </ul>
+        
         <div class="api-example">
             <h2>Example of Using the API</h2>
             <p>Below is a screenshot of how you can test the API endpoints using Postman:</p>
-            <img src="path_to_screenshot.png" alt="Postman screenshot">
+            <img src="{% static 'PostmanSS.png' %}" alt="Postman screenshot" style="max-width: 500px; max-height: 500px;">
+            <img src="{% static 'PostmanSS_1.png' %}" alt="Postman screenshot" style="max-width: 500px; max-height: 500px;">
+            <img src="{% static 'PostmanSS_2.png' %}" alt="Postman screenshot" style="max-width: 500px; max-height: 500px;">
+            <!-- <img src="path_to_screenshot.png" alt="Postman screenshot"> -->
         </div>
     </div>
 </body>
